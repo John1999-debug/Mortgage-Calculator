@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            <div class="item-1">
+                <h1>Mortgage Calculator</h1>
+                <button><p><u>Clear All</u></p></button>
+            </div>
+            <div class="item-2">
+                <p>Mortgage Amount</p>
+                <div class="input">
+                    <h1 id="h1">£</h1>
+                    <input type="text" id="inp-1">
+                </div>
+            </div>
+            <div class="item-3">
+                <div class="left-3">
+                    <p>Mortgage Term</p>
+                    <div class="input-2">
+                    <input type="text" id="inp-2">
+                    <h1 id="h2">years</h1>
+                    </div>
+                </div>
+                <div class="right-3">
+                    <p>Interest Rate</p>
+                    <div class="input-3">
+                    <input type="text" id="inp-3">
+                    <h1 id="h3">%</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="item-4">
+                <p>Morgage Type</p>
+                <div class="box" id="b1"><span class="dot"></span><p class="para1">Repayment</p></div></div>
+            <div class="item-4m">
+                <div class="box" id="b2"><span class="dot"></span><p class="para2">Interest Only</p></div>
+            </div>
+            <div class="item-5">
+                <button><img src="icon-calculator.svg" alt="">Calculate Repayment</button>
+            </div>
+        </div>
+        <div class="right">
+            <div id="cal-img"><img src="illustration-empty.svg" alt=""></div>
+            <h1>Result shown here</h1>
+            <p>Complete the form and click “calculate repayments” to see what your monthly repayments would be.</p>
+            </div>
+    </div>
+    <div class="item-4a hide">
+        <div class="boxa" id="b1a"><span class="dot2"><span class="in-dot"></span></span><p class="actpara1 hide">Repayment</p></div>
+    </div>
+    <div class="item-4b hide">
+        <div class="boxa" id="b2a"><span class="dot2"><span class="in-dot"></span></span><p class="actpara2 hide">Interest Only</p></div>
+    </div>
+    <div class="result hide">
+        <h1>Your results</h1>
+        <p>Your results are shown below based on the information you provided. To adjust the results, edit the form and click “calculate repayments” again.</p>
+        <div class="result-square">
+            <h4>Your monthly repayments</h4>
+            <h2 id="EMI">£1,797.74</h2>
+            <p>Total you'll repay over the term</p>
+            <div class="payment"><h3 id ="amt-total">£539,322.94</h3></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
