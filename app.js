@@ -90,6 +90,4 @@ btn2.addEventListener("click", ()=>{
     dot1.style.backgroundColor = "#D8DB2F";
     dot1.style.borderColor = "#D8DB2F";
     interest = true;
-})
-
-
+});
