@@ -280,7 +280,7 @@ body {
 }
 
 .input-3 input{
-    width: 102px;
+    width: 111px;
     height: 40px;
     border:1px solid #6B94A8;
     border-radius: 4px 0px 0px 4px;
@@ -348,7 +348,7 @@ body {
     margin-top: 10px;
     margin-bottom: 8px;
     height: 40px;
-    width: 324px;
+    width: 365px;
     border: 1px solid #6b94a8;
     border-radius: 6px;
 }
@@ -363,7 +363,7 @@ body {
 
 #b2{
     height: 40px;
-    width: 324px;
+    width: 365px;
     border: 1px solid #6b94a8;
     border-radius: 6px;
 }
