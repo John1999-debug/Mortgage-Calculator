@@ -6,17 +6,15 @@ const EMI = document.getElementById("EMI");
 const totalAmt = document.getElementById("amt-total");
 let btn1 = document.querySelector(".item-4");
 let btn2 = document.querySelector(".item-4m");
-let activeBtn1 = document.querySelector(".item-4a");
-let activeBtn2 = document.querySelector(".item-4b");
-let btn1Content = document.querySelector(".para1");
-let btn1ActiveContent = document.querySelector(".actpara1");
-let btn2Content = document.querySelector(".para2");
-let btn2ActiveContent = document.querySelector(".actpara2");
 let result = document.querySelector(".result");
 let clearAll = document.querySelector(".item-1");
 let h1 = document.getElementById("h1");
 let h2 = document.getElementById("h2");
 let h3 = document.getElementById("h3");
+let b1 = document.getElementById("b1");
+let b2 = document.getElementById("b2");
+let dot = document.querySelector(".dot");
+let dot1 = document.querySelector(".dot1");
 let replayment = false; 
 let interest = false;
 
@@ -77,18 +75,20 @@ clearAll.onclick = () => {
 }
 
 btn1.addEventListener("click",() => {
-    console.log("Repayment button was clicked")
-    btn1Content.classList.add("hide");
-    activeBtn1.classList.remove("hide");
-    btn1ActiveContent.classList.remove("hide");
+    console.log("Repayment button was clicked");
+    b1.style.backgroundColor = "rgb(216, 219, 47, 0.10)";
+    b1.style.borderColor = "#D8DB2F";
+    dot.style.backgroundColor = "#D8DB2F";
+    dot.style.borderColor = "#D8DB2F";
     replayment = true;
 });
 
 btn2.addEventListener("click", ()=>{
     console.log("Interest button was clicked");
-    btn2Content.classList.add("hide");
-    activeBtn2.classList.remove("hide");
-    btn2ActiveContent.classList.remove("hide");
+    b2.style.backgroundColor = "rgb(216, 219, 47, 0.10)";
+    b2.style.borderColor = "#D8DB2F";
+    dot1.style.backgroundColor = "#D8DB2F";
+    dot1.style.borderColor = "#D8DB2F";
     interest = true;
 })
 
